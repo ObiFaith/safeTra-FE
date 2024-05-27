@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { Link, useNavigate} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [isPending, setIsPending] = useState(false);
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
 
     const handleLogin = e => {
         e.preventDefault();
@@ -26,7 +26,7 @@ const Login = () => {
     return (
     <div className="bubbles_bg">
          <div className="container">
-            <Link to='/' className='_logo'><img src={require('../images/logo.svg').default}/></Link>
+            <Link to='/' className='_logo'><img alt='Logo' src={require('../images/logo.svg').default}/></Link>
             <div className="login">
                 <h2 className="text-center">Welcome Back</h2>
                 <form className="form">
@@ -40,7 +40,7 @@ const Login = () => {
                     </div>
                     <div className="d-flex justify-between checkbox">
                         <div><input type="checkbox"/> Remember Me</div>
-                        <a>Forgot Your Password?</a>
+                        <Link to=''>Forgot Your Password?</Link>
                     </div>
                     {!isPending && <button className="btn btn-form" type="submit" onClick={handleLogin}>Sign In</button>}
                     {isPending && <button className="btn btn-form" type="submit" onClick={handleLogin}>Signing In...</button>}

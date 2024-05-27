@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import business from '../images/business.svg';
 import freelance from '../images/freelance(2).svg';
-import watch from '../images/hero_car.svg';
 
 const ImageSlider = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

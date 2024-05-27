@@ -1,4 +1,4 @@
-import { useState } from "react";
+ import { useState } from "react";
 import { Link, useNavigate} from 'react-router-dom';
 
 const Signup = () => {
@@ -27,13 +27,13 @@ const Signup = () => {
     <div className="bubbles_bg">
         <div className="container">
             <div className="d-flex justify-between">
-                <Link to='/' className='_logo'><img src={require('../images/logo.svg').default}/></Link>
+                <Link to='/' className='_logo'><img alt="Logo Icon" src={require('../images/logo.svg').default}/></Link>
                 {error && !menu && <div className="d-flex justify-between err-msg w-30">
                     <div className="d-flex">
-                        <img src={require('../images/error-icon.svg').default}/>
+                        <img alt="Error Icon" src={require('../images/error-icon.svg').default}/>
                         <div className="fw-700">{error}</div>
                     </div>
-                    {!menu && <img onClick={() => setMenu(!menu)} src={require('../images/icon-close-regular.svg').default} />}
+                    {!menu && <img alt="Close Icon" onClick={() => setMenu(!menu)} src={require('../images/icon-close-regular.svg').default} />}
                 </div>}
             </div>
             <div className="signup">
@@ -55,7 +55,7 @@ const Signup = () => {
                     {/* <Input label="Email" name="email" placeholder="Email address"/>
                     <Input label="Username" name="text"  placeholder=""/>
                     <Input label="Password" name="password" placeholder="Password (min. 8 character)"/> */}
-                    <div className="checkbox d-flex fw-500"><input required type="checkbox"/><div>I agree to <a href="#">Terms & Conditions</a></div></div>
+                    <div className="checkbox d-flex fw-500"><input required type="checkbox"/><div>I agree to <Link to=''>Terms & Conditions</Link></div></div>
                     {!isPending && <button className="btn btn-form" type="submit" onClick={handleSubmit}>Sign In</button>}
                     {isPending && !menu && <button className="btn btn-form" type="submit" onClick={handleSubmit}>Signing In...</button>}
                     {menu && <button className="btn btn-form" type="submit" onClick={handleSubmit}>Sign In</button>}

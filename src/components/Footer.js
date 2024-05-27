@@ -5,22 +5,22 @@ const Footer = () => {
         <footer className='pink_overlay'>
             <div className='container'>
                 <div className='d-flex justify-between align-start'>
-                    <Link className='footer_logo slider-btn-lg' to="/"><img src={require('../images/footer_logo.svg').default}/></Link>
-                    <Link className='footer_logo slider-btn-sm' to="/"><img src={require('../images/logo.svg').default}/></Link>
+                    <Link className='footer_logo slider-btn-lg' to="/"><img alt="Footer Logo" src={require('../images/footer_logo.svg').default}/></Link>
+                    <Link className='footer_logo slider-btn-sm' to="/"><img alt="Logo" src={require('../images/logo.svg').default}/></Link>
                     <div>
                         <h3>Useful Links</h3>
                         <ul>
-                            <li className='nav_item'><a className='nav_link'>About Us</a></li>
-                            <li className='nav_item'><a className='nav_link'>Services</a></li>
-                            <li className='nav_item'><a className='nav_link'>How It Works</a></li>
+                            <li className='nav_item'><Link to='' className='nav_link'>About Us</Link></li>
+                            <li className='nav_item'><Link to='' className='nav_link'>Services</Link></li>
+                            <li className='nav_item'><Link to='' className='nav_link'>How It Works</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h3>Legal</h3>
                         <ul>
-                            <li className='nav_item'><a className='nav_link'>Terms of service</a></li>
-                            <li className='nav_item'><a className='nav_link'>Privacy policy</a></li>
-                            <li className='nav_item'><a className='nav_link'>Return policy</a></li>
+                            <li className='nav_item'><Link to='' className='nav_link'>Terms of service</Link></li>
+                            <li className='nav_item'><Link to='' className='nav_link'>Privacy policy</Link></li>
+                            <li className='nav_item'><Link to='' className='nav_link'>Return policy</Link></li>
                         </ul>
                     </div>
                     <div>

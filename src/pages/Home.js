@@ -24,7 +24,7 @@ const Home = () => {
     const review = reviews[currentIndex];
     const brandElements = ['brand', 'jiji', 'iStore', 'jumia','amazon', 'brand2'].map(brand => <img src={require(`../images/${brand}.svg`)} alt={`${brand} Logo`}/>);
     const howItWorkElements = howItWorks.map(props => <div key={props.id}> <img src={require(`../images/${props.img}.svg`)} alt={props.img}/> <p><span className='fw-700'>{props.id}.</span> {props.text}</p> </div>);    
-    const seviceElements = services.map(service => <div key={service.id}> <div className='d-flex align-end'><img src={require(`../images/${service.img}.svg`)} alt={service.img}/> <h3 className='m-0'>{service.heading}</h3></div> <p>{service.text}</p> <a className='fw-700' href="#">Learn More</a></div>);    
+    const seviceElements = services.map(service => <div key={service.id}> <div className='d-flex align-end'><img src={require(`../images/${service.img}.svg`)} alt={service.img}/> <h3 className='m-0'>{service.heading}</h3></div> <p>{service.text}</p> <Link className='fw-700' to="">Learn More</Link></div>);    
     
     return(
     <>

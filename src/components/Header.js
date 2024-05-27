@@ -25,8 +25,8 @@ const Header = () => {
             <div className='container'>
                     <nav className='d-flex justify-between'>
                         <div className='d-flex justify-between'>
-                            <Link to="/"><img src={require('../images/logo.svg').default}/></Link>                
-                            <img className='menu' onClick={handleMenu} src={require(`../images/icon-${menu ? 'menu' : 'close'}.svg`)}/>
+                            <Link to="/"><img alt='Logo Icon' src={require('../images/logo.svg').default}/></Link>                
+                            <img alt='Menu Icon' className='menu' onClick={handleMenu} src={require(`../images/icon-${menu ? 'menu' : 'close'}.svg`)}/>
                         </div>                
                         <ul className={`nav_list d-flex ${menu ? 'disable' : ''}`}>
                             <li className='nav_item'> <Link to="/" className='nav_link active'>Home</Link></li>

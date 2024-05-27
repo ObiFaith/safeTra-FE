@@ -14,12 +14,12 @@ const Authentication = () => {
                         <Input name="number" label="Phone number" placeholder="000 000 0000" width="w-70"/>
                     </div>
                     <div className="d-flex security">
-                        <img src={security_shield}/>
+                        <img alt="Security Shield" src={security_shield}/>
                         <p className="m-0">Your security is very important to us at safe tra, hence we should send you a verification code each time you log into your device.</p>
                     </div>
                     <Button name="Send code"/>
                 </form>
-                <div className="text-center fw-700"><a href="#">Sign out</a></div>
+                <div className="text-center fw-700"><Link to="/login">Sign out</Link></div>
             </div>
         </div>
     );
