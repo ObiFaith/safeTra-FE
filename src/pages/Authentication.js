@@ -1,6 +1,7 @@
 import security_shield from "../images/security_shield.svg"
 import Button from "../components/Button";
 import Input from "../components/Input";
+import { Link } from "react-router-dom";
 
 const Authentication = () => {
     return (

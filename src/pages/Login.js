@@ -9,7 +9,7 @@ const Login = () => {
 
     const handleLogin = e => {
         e.preventDefault();
-        const user = {email, password};
+        //const user = {email, password};
         setIsPending(true);
         /* fetch(`http://localhost:8000/login/?email=${user.email}&password=${user.password}`)
         .then(data => console.log(data)) */
